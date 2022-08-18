@@ -1,0 +1,158 @@
+body {
+    background-color: #f3eae3;
+    height: 100vh;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    
+    @media (min-width:480px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.carta {
+
+    @media (min-width: 480px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top-right-radius: .5rem;
+    }
+
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-color: hsl(0, 0%, 100%);
+
+    .carta-texto {
+        padding: 1rem;
+        @media (min-width : 480px) {
+            padding: 2rem;
+        }
+    }
+
+    .tipo-articulo {
+        font-size: .8rem;
+        color: hsl(228, 12%, 48%);
+    }
+
+    h2 {
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        color: hsl(228, 12%, 48%);
+        font-weight: 500;
+        font-size: .9rem;
+        line-height: 1.8;
+    }
+
+    span {
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+    }
+
+}
+
+.precio {
+
+    @media (min-width : 480px) {
+        margin-top: 1.5rem;
+        p{
+            line-height: 1;
+        }
+    }
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    @media (min-width: 480px) {
+        gap : 1rem;
+    }
+
+    p {
+        font-family: 'Fraunces', serif;
+        color: hsl(158, 36%, 37%);
+        font-size: 2rem;
+        margin: 0;
+
+        @media (min-width : 480px) {
+            margin-top: 1rem 0;
+
+            span{
+                color: hsl(228, 12%, 48%);
+            }
+        }
+    }
+
+    span {
+        color: hsl(228, 12%, 48%);
+        letter-spacing: 0;
+        font-size: 1rem;
+        text-decoration: line-through;
+    }
+}
+
+button {
+    &:hover{
+        background-color: #1a4031;
+    }
+
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+
+    width: 100%;
+    padding: 0rem 1rem;
+
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+
+    @media (min-width : 480px) {
+        margin-top: 2rem;
+    }
+
+    img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+}
+
+.contenedor {
+    max-width: 90%;
+    margin: 1.5rem auto;
+
+    @media (min-width : 480px) {
+        max-width: 35%;
+    }
+}
+
+.contenedor-imagen {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    height: 15rem;
+    background-image: url(../../src/img/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 480px){
+        height: auto;
+        background-image: url(../../src/img/image-product-desktop.jpg);
+
+
+        border-bottom-left-radius: .5rem;
+        border-top-right-radius: 0;
+    }
+}
