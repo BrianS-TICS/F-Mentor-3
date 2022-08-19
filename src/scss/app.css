@@ -126,7 +126,7 @@ button img {
 }
 @media (min-width: 480px) {
   .contenedor {
-    max-width: 35%;
+    max-width: 35rem;
   }
 }
 
@@ -146,4 +146,4 @@ button img {
     border-bottom-left-radius: 0.5rem;
     border-top-right-radius: 0;
   }
-}/*# sourceMappingURL=app.css.map */
+}
